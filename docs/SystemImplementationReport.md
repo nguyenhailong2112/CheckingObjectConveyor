@@ -1,7 +1,7 @@
 # System Implementation Report
 
 ## 1. Current implemented status
-Current codebase has completed foundational milestones **M1 + M2 + M3 (baseline)** for the single-camera PoC.
+Current codebase has completed PoC milestones M1→M11 (core pipeline + hardening + docs sync), with clear separation between logic simulation and real runtime operation.
 
 ### Implemented components
 - Runtime pipeline skeleton and stage contracts.
