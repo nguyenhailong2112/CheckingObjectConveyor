@@ -1,0 +1,25 @@
+{
+  "timestamp": 3.0,
+  "track_id": "2",
+  "reason": "LOW_CONF",
+  "track": {
+    "track_id": "2",
+    "bbox": [
+      0,
+      0,
+      10,
+      10
+    ],
+    "track_confidence": 0.1,
+    "state": "STABLE",
+    "counted": false,
+    "uncertainty": false,
+    "zone_history": [
+      "ENTERED",
+      "VERIFY"
+    ],
+    "age": 0,
+    "missed_frames": 0,
+    "trajectory": []
+  }
+}

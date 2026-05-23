@@ -1,0 +1,24 @@
+{
+  "timestamp": 4.0,
+  "track_id": "3",
+  "reason": "ZONE_ORDER_MISMATCH",
+  "track": {
+    "track_id": "3",
+    "bbox": [
+      0,
+      0,
+      10,
+      10
+    ],
+    "track_confidence": 0.9,
+    "state": "STABLE",
+    "counted": false,
+    "uncertainty": false,
+    "zone_history": [
+      "VERIFY"
+    ],
+    "age": 0,
+    "missed_frames": 0,
+    "trajectory": []
+  }
+}
