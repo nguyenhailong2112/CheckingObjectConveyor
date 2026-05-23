@@ -1,0 +1,44 @@
+camera:
+  source_type: video_file
+  source_uri: sample.mp4
+  expected_fps: 40
+  reconnect_backoff_sec: [1, 3, 5, 10]
+
+roi:
+  roi: [150, 200, 1600, 900]
+  entry_zone: [200, 300, 1500, 450]
+  verify_zone: [200, 650, 1500, 800]
+
+preprocess:
+  target_size: [1280, 720]
+  brightness_low: 80
+  brightness_high: 220
+  contrast_threshold: 25
+  noise_threshold: 15
+  use_clahe: true
+  use_denoise: true
+
+detection:
+  model: yolo11m.pt
+  confidence_threshold: 0.5
+  nms_iou: 0.5
+
+tracking:
+  match_thresh: 0.65
+  track_buffer_sec: 0.3
+  min_box_area: 100
+  lost_cleanup: 10
+
+counting:
+  min_track_confidence: 0.5
+  direction: top_to_bottom
+  enforce_dual_zone: true
+
+logging:
+  level: INFO
+  event_log_path: logs/system_log.csv
+
+kpi:
+  target_fps: 35
+  uncertain_rate_max: 0.02
+  double_count_rate_max: 0.002
