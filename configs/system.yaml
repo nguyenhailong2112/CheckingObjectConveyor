@@ -25,6 +25,8 @@ detection:
 
 tracking:
   match_thresh: 0.65
+  iou_match_threshold: 0.3
+  max_center_distance: 120
   track_buffer_sec: 0.3
   min_box_area: 100
   lost_cleanup: 10

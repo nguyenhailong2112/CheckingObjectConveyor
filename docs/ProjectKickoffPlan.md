@@ -189,3 +189,12 @@ This allows fast iterative integration while preserving the system design constr
 - [DONE] Add one-command demo session runner (preflight + execution + summary).
 - [DONE] Add demo session regression test.
 - [DONE] Update operations manual with demo execution flow.
+
+
+### M12 — Real runtime + model lifecycle package
+- [DONE] Replace fixed-zone TODO in real runtime with config-driven ENTRY/VERIFY zone membership.
+- [DONE] Add lightweight persistent ID association for single-camera tracking baseline.
+- [DONE] Add YOLO11m training script with production-oriented defaults and model registry promotion.
+- [DONE] Add offline ground-truth count evaluator for Count Accuracy/Miss Count/Double Count.
+- [DONE] Add tests for tracker association, tracking-zone-count flow, training config, and evaluator.
+- [DONE] Update quickstart/manual/summary/audit docs to reflect current runnable state.

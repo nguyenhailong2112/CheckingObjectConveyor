@@ -121,3 +121,12 @@ Validate end-to-end skeleton flow for: detect -> overlap gate -> tracking -> lif
 ## 18. Demo Execution Wave (current turn)
 - Added `run_demo_session.py` to execute preflight + deterministic pipeline steps + summary in one command.
 - Added `test_run_demo_session.py` and updated operations manual for clearer operator usage.
+
+
+## 19. Real Runtime + Training Closure Wave (current turn)
+- Upgraded `tracking/bytetrack_engine.py` from per-frame new IDs to lightweight IoU/center-distance ID association.
+- Wired `TrackingService` to calculate ENTRY/VERIFY membership from configured zones instead of fixed track IDs.
+- Updated `scripts/run_real_system.py` with config-driven zones, camera health, KPI snapshot, CSV runtime logs, headless mode, and acceptance summary.
+- Added `vision/training/train.py` and `scripts/train_detector.py` for YOLO11m training, model version copy, active model promotion, and metrics sidecar output.
+- Added `monitoring/evaluation/count_evaluator.py` and `scripts/evaluate_counts.py` for offline Count Accuracy/Miss Count/Double Count evaluation against ground-truth CSV.
+- Added regression checks for tracker association, tracking-zone-count flow, training config, count evaluator, and direct script-suite execution.

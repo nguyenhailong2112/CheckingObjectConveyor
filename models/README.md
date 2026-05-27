@@ -10,3 +10,8 @@ Every model version should have a metrics sidecar JSON with:
 - recall
 - count_accuracy
 - fps
+
+`scripts/train_detector.py` writes:
+- `models/<run_name>.pt`
+- `models/<run_name>.metrics.json`
+- `model_registry/active/best.pt`
